@@ -22,6 +22,8 @@ public class Base {
 	public WebDriver driver; // public keyword allows to use/access driver for all classes
 	public Properties prop; // publicly defined so I can use it for other classes as well
 	
+	
+	
 	public WebDriver initializerDriver() throws IOException{
 		// Use Properties to read data sets from Properties file: This is called Data Driven testing
 		prop = new Properties();
@@ -45,6 +47,8 @@ public class Base {
 		
 		//driver.get("url");
 		driver.manage().window().maximize(); // Maximize window
+		
+		System.out.println("Hello");
 		
 		return driver;
 		
